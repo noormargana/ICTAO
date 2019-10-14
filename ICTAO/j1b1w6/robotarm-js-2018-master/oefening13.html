@@ -11,21 +11,30 @@
             robotArm.randomLevel( 1, 8);
             
             // Jou instructies volgen hier
+            var right = 1
+
+            block == "blue"
+
             robotArm.speed=1000
-            for (var y = 0; y < 4; y++) {
+
             robotArm.grab();
-            robotArm.scan();
             var block = robotArm.scan();
-            if (block ==null) {
-                robotArm.drop();
-                
+            robotArm.scan();
+
+            console.log(block);
+
+            var move = 1;
+            while (block!=null) {
+                for (var y = 0; y < move; y++){
+               robotArm.moveRight();
             }
-            else {
-                console.log(y);
-                robotArm.moveRight();
-                robotArm.drop();
-                robotArm.moveLeft();
+               robotArm.drop();
+               for (var y = 0; y < move; y++){
+               robotArm.moveLeft();
             }
+               robotArm.grab();
+               block = robotArm.scan();
+               move++;
             }
             // De door jou opgegeven instructies uitvoeren
             robotArm.run();
