@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <script src="./robot-arm.js"></script>
+        <script>
+            // Robotarm bibliotheek inladen
+            var canvas = document.getElementById("canvas");
+            var robotArm = new RobotArm(canvas);
+            
+            // Het level inladen
+            robotArm.loadLevel("exercise 9");
+            
+            // Jou instructies volgen hier
+            robotArm.speed=1000
+            for (var i = 1; i <= 3; i++) {
+                robotArm.moveRight();
+            }
+            for (var y = 1; y <= 4; y++) {
+            robotArm.grab();
+            for (var i = 1; i <= 5; i++) {
+                robotArm.moveRight();
+            }
+            robotArm.drop();
+            for (var i = 1; i <= 5; i++) {
+                robotArm.moveLeft();
+            }
+            }
+            robotArm.moveLeft();
+            for (var y = 1; y <= 3; y++) {
+            robotArm.grab();
+            for (var i = 1; i <= 5; i++) {
+                robotArm.moveRight();
+            }
+            robotArm.drop();
+            for (var i = 1; i <= 5; i++) {
+                robotArm.moveLeft();
+            }
+            }
+            robotArm.moveLeft();
+            for (var y = 1; y <= 2; y++) {
+            robotArm.grab();
+            for (var i = 1; i <= 5; i++) {
+                robotArm.moveRight();
+            }
+            robotArm.drop();
+            for (var i = 1; i <= 5; i++) {
+                robotArm.moveLeft();
+            }
+            }
+            robotArm.moveLeft();
+            for (var y = 1; y <= 1; y++) {
+            robotArm.grab();
+            for (var i = 1; i <= 5; i++) {
+                robotArm.moveRight();
+            }
+            robotArm.drop();
+            for (var i = 1; i <= 5; i++) {
+                robotArm.moveLeft();
+            }
+            }
+
+
+            // De door jou opgegeven instructies uitvoeren
+            robotArm.run();
+        </script>
+    </body>
+</html>
