@@ -23,7 +23,7 @@ if(antwoord == 'a') {
 			alert('Game over: Je bent vergiftigd door gifgas in de doos');
 		}else{
 			alert('Je hebt '+voedsel+' soep en water');
-			alert('Om te blijven overleven moet je de volgende vragen goed beantwoorden. Elk fout antwoord kost je 1 soep en water')
+			alert('Je hebt de invasie overleeft!!')
 			if(voedsel == 0){
 				alert('Game over: Overleden aan verhongering');
 			}else{
