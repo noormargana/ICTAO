@@ -15,14 +15,14 @@
             robotArm.moveRight();
             for (var o = 1; o <= 7; o++) {
             
-            robotArm.grab();
-            for (var i = 1; i <= 8; i++) {
-            robotArm.moveRight();
-            }
-            robotArm.drop();
-            for (var i = 1; i <= 8; i++) {
-            robotArm.moveLeft();
-            }
+                robotArm.grab();
+                for (var i = 1; i <= 8; i++) {
+                 robotArm.moveRight();
+                }
+                robotArm.drop();
+                for (var i = 1; i <= 8; i++) {
+                  robotArm.moveLeft();
+                }
             }
             
             // De door jou opgegeven instructies uitvoeren
