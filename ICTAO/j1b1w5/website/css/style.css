@@ -1,5 +1,11 @@
+div.container{
+	width: 800px;
+	margin:0 auto;
+}
+
+
 div {
-    height: 700px;
+    /*height: 700px;
     width: 800px;
     background: white;
     overflow: auto;
@@ -10,7 +16,7 @@ div {
     top: 50%;
     left: 50%;
     margin-top: -350px;
-    margin-left: -400px;
+    margin-left: -400px;*/
 }
 .center {
   display: block;
@@ -22,7 +28,7 @@ h1 {
 	font-size: 36px;
 	line-height: 36px;
 }
-p1 {
+.p1 {
 	font-size: 24px;
 	line-height: 32px;
 }
@@ -32,4 +38,16 @@ b {
 }
 br {
 	line-height: 40px;
+}
+
+ul li{
+	margin-bottom: 10px;
+}
+
+
+.tip{
+	height: 50px;
+	width: 800px;
+	background-color: #def6ed;
+	border-radius: 4px;
 }
